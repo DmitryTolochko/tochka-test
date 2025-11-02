@@ -1,0 +1,158 @@
+.game__cells, .game__board {
+  margin-top: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  width: fit-content;
+  border-radius: 50px;
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 3em;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 1em;
+  }
+}
+
+.game__board {
+  box-shadow: inset 0px 4px 16px 0px rgba(0, 0, 0, 0.25),0px 4px 9.800000190734863px 0px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180.00deg, rgba(204, 164, 245, 0.09),rgba(206, 71, 129, 0.09) 100%);
+}
+
+.game__row {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 1300px) {
+    gap: 1em;
+  }
+}
+
+.game {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 5em;
+  }
+}
+
+.game__window {
+  background-color: #353535;
+  width: 100%;
+  height: var(--game-window-size);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.game__pointer {
+  position: absolute;
+  align-self: start;
+  width: 38px;
+  height: 38px;
+  background-color: #171617;
+  transform: rotate(90deg);
+  clip-path: polygon(50% 0%, 50% 100%, 100% 50%);
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.game__buttons {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 1300px) {
+    gap: 1em;
+  }
+}
+
+.game__current-player, .game__button {
+  all: unset;
+  background-color: #CBA4F5;
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 600px) {
+    padding: 1em 1.5em;
+    gap: 1em;
+  }
+}
+
+.game__current-player-p, .game__button {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1em;
+  }
+}
+
+.game__button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d6c3eb;
+    transition: ease-in-out .2s all;
+  }
+}
+
+.game__container {
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 1em;
+  }
+}
+
+.game__dot_red, .game__dot_blue {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 600px) {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.game__dot_red {
+  background-color: #EB3232;
+}
+
+.game__dot_blue {
+  background-color: #0B00A1;
+}
+
+.game__bot-thinking {
+  padding-top: 24px;
+  font-size: 24px;
+  font-weight: 800;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1em;
+    padding-top: 0.8em;
+  }
+}
+
+.game__rules {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 800;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+}

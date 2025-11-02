@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(175, 110, 237, 1);
+  font-family: Anton SC;
+  font-size: 48px;
+  padding: 12px 0px;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 2em;
+  }
+}

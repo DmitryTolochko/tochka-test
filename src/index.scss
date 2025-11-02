@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 20px;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 3vw;
+  }
+}
+
+body {
+    background-color: #171617;
+    color: white;
+}
