@@ -143,7 +143,7 @@ export const updateWinningCells = (value: number[][]) => {
 export const getIsDraw = (isDefault: boolean = false) => {
     if (isDefault) {
         setToStorage('IS_DRAW', false);
-        return [];
+        return false;
     }
 
     return getFromStorage('IS_DRAW', false);
