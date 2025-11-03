@@ -1,4 +1,4 @@
-import { getConstants } from "../Storage/Storage";
+import { getConstants } from "../../utils/storage";
 import './Cell.scss';
 
 interface ICellProps {

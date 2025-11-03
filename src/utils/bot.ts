@@ -1,5 +1,5 @@
-import { getConstants } from "../Storage/Storage";
-import { checkWinner } from "../Tools/Tools";
+import { getConstants } from "./storage";
+import { checkWinner } from "./tools";
 
 /**
  * Функция-бот для игры в 4 в ряд, использующая алгоритм Minimax

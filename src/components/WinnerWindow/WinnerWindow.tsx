@@ -9,7 +9,7 @@ interface IWinnerWindowProps {
 
 /**
  * Компонент окна с окончанием игры
- * @property {() = void} resetGame - функция для сброса игры
+ * @property {function(): void} resetGame - функция для сброса игры
  * @property {number} winner - игрок-победитель
  * @property {boolean} isDraw - игра окончилась ничьей
  * @param param0 

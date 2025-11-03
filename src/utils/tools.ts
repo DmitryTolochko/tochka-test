@@ -1,4 +1,4 @@
-import { getConstants } from "../Storage/Storage";
+import { getConstants } from "./storage";
 
 /**
  * Проверка поля на наличие победы и вывод ячеек, являющих победную комбинацию

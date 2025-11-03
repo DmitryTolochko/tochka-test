@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Settings.scss';
 import { useNavigate } from 'react-router-dom';
-import { getBoard, getConstants, getCurrentPlayer, updateBoard, updateConstants, updateCurrentPlayer} from '../Storage/Storage';
+import { getBoard, getConstants, getCurrentPlayer, updateBoard, updateConstants, updateCurrentPlayer} from '../../utils/storage';
 import type { IConstants } from '../../types/types';
 
 /**

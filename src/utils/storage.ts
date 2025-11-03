@@ -1,4 +1,4 @@
-import type { IConstants } from "../../types/types";
+import type { IConstants } from "../types/types";
 
 /**
  * Получение значения из localStorage

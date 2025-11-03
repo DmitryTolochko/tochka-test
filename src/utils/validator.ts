@@ -1,6 +1,6 @@
-import type { GameResult, PlayerPositions, StepResult, WinnerInfo } from "../../types/types";
-import { getConstants } from "../Storage/Storage";
-import { checkDraw, checkWinner } from "../Tools/Tools";
+import type { GameResult, PlayerPositions, StepResult, WinnerInfo } from "../types/types";
+import { getConstants } from "./storage";
+import { checkDraw, checkWinner } from "./tools";
 
 /**
  * Аналитика хода игры

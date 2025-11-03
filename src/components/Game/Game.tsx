@@ -3,10 +3,10 @@ import './Game.scss'
 import WinnerWindow from '../WinnerWindow/WinnerWindow';
 import Cell from '../Cell/Cell';
 import { useNavigate } from 'react-router-dom';
-import { getBoard, getConstants, getCurrentPlayer, getIsDraw, getWinningCells, updateBoard, updateCurrentPlayer, updateIsDraw, updateWinningCells } from '../Storage/Storage';
-import { checkDraw, checkWinner } from '../Tools/Tools';
-import { validator } from '../Validator/Validator';
-import { getBotMove } from '../Bot/Bot';
+import { getBoard, getConstants, getCurrentPlayer, getIsDraw, getWinningCells, updateBoard, updateCurrentPlayer, updateIsDraw, updateWinningCells } from '../../utils/storage';
+import { checkDraw, checkWinner } from '../../utils/tools';
+import { validator } from '../../utils/validator';
+import { getBotMove } from '../../utils/bot';
 
 /**
  * Компонент игры
